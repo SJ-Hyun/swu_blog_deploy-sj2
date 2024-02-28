@@ -53,4 +53,10 @@ public class BlogServiceImpl implements BlogService {
         blogRepository.update(blog);
     }
 
+    // 추가 기능 : 목록에서 글 클릭해서 detail 페이지로 조회 시 조회수 카운트해줌.
+    @Override
+    public long viewUpdate(Blog blog) {
+        return blogRepository.viewUpdate(blog);
+    }
+
 }
